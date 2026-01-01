@@ -7,7 +7,8 @@
         "lm_sensors",
         "lsp-plugins-lv2",
         "lv2-bankstown",
-        "pipewire-module-filter-chain-lv2"
+        "pipewire-module-filter-chain-lv2",
+        "ptyxis"
       ],
       "silverblue": [],
       "kinoite": ["kcm-fcitx5", "ksystemlog", "plasma-wallpapers-dynamic"]

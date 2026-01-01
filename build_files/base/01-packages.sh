@@ -76,7 +76,7 @@ dnf config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fed
 dnf config-manager setopt tailscale-stable.enabled=0
 dnf -y install --enablerepo='tailscale-stable' tailscale
 
-copr_install_isolated scottames/ghostty "ghostty"
+# copr_install_isolated scottames/ghostty "ghostty"
 
 # TODO: remove me on next flatpak release when preinstall landed in Fedora
 dnf5 -y copr enable ublue-os/flatpak-test
