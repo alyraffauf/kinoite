@@ -78,6 +78,10 @@ dnf -y install --enablerepo='tailscale-stable' tailscale
 
 # copr_install_isolated scottames/ghostty "ghostty"
 
+# From ublue-os/packages
+copr_install_isolated "ublue-os/packages" \
+    "krunner-bazaar"
+
 # TODO: remove me on next flatpak release when preinstall landed in Fedora
 dnf5 -y copr enable ublue-os/flatpak-test
 dnf5 -y copr disable ublue-os/flatpak-test
