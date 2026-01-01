@@ -1,4 +1,5 @@
 [KDE]
+LookAndFeelPackage=org.fedoraproject.fedora.desktop
 SingleClick=false
 ColorScheme=BreezeDark
 widgetStyle=Breeze
