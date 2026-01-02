@@ -21,3 +21,15 @@ desktopfilerule=3
 wmclass=steamwebhelper SDL Application
 wmclasscomplete=true
 wmclassmatch=1
+
+[firefox-pip-fix]
+Description=firefox-pip-fix
+above=true
+aboverule=3
+desktops=\\0
+desktopsrule=3
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=org.mozilla.firefox
+wmclassmatch=1
