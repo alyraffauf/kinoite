@@ -8,7 +8,8 @@
         "lsp-plugins-lv2",
         "lv2-bankstown",
         "pipewire-module-filter-chain-lv2",
-        "ptyxis"
+        "ptyxis",
+        "syncthing"
       ],
       "silverblue": [],
       "kinoite": ["kcm-fcitx5", "ksystemlog", "plasma-wallpapers-dynamic"]
