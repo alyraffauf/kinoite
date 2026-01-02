@@ -50,3 +50,24 @@ if [ -n "$homebrew_prefix" ]; then
     fi
 fi
 unset homebrew_prefix
+
+# Set TERM for Ghostty terminal
+if [ "$TERM_PROGRAM" = "ghostty" ]; then
+    export TERM=xterm-256color
+fi
+
+if command -v direnv &> /dev/null; then
+    eval "$(direnv hook bash)"
+fi
+
+if command -v fzf &> /dev/null; then
+    eval "$(fzf --bash)"
+fi
+
+if command -v starship &> /dev/null; then
+    eval "$(starship init bash)"
+fi
+
+if command -v zoxide &> /dev/null; then
+    eval "$(zoxide init bash --cmd cd)"
+fi
