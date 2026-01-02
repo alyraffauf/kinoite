@@ -29,12 +29,11 @@ rm /etc/xdg/autostart/org.kde.discover.notifier.desktop
 # Use Bazaar for Flatpak refs
 echo "application/vnd.flatpak.ref=io.github.kolunmi.Bazaar.desktop" >> /usr/share/applications/mimeapps.list
 
-systemctl enable flatpak-preinstall.service
-systemctl --global enable bazaar.service
-
 # Disable third-party repos
 for repo in negativo17-fedora-multimedia tailscale fedora-cisco-openh264; do
     if [[ -f "/etc/yum.repos.d/${repo}.repo" ]]; then
         sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/${repo}.repo"
     fi
 done
+
+ostree container commit
