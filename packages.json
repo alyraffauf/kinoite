@@ -2,6 +2,8 @@
   "all": {
     "include": {
       "all": [
+        "ansible",
+        "chezmoi",
         "fish",
         "ifuse",
         "lm_sensors",
