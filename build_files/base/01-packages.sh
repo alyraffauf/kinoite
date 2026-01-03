@@ -78,7 +78,9 @@ dnf -y install --enablerepo='tailscale-stable' tailscale
 
 # copr_install_isolated scottames/ghostty "ghostty"
 
-# From ublue-os/packages
+copr_install_isolated "lizardbyte/beta" \
+    "sunshine"
+
 copr_install_isolated "ublue-os/packages" \
     "krunner-bazaar"
 
